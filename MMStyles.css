@@ -1,0 +1,64 @@
+ul {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+}
+
+
+li{
+	float: left;
+	margin-right: 60px;
+	font-size: 20px;
+	font-family: "Courier New", courier, monospace;
+}
+
+.navBar{
+	color: black;
+	margin-top: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.headers {
+	background-color: #70DBDB;
+	color: white;
+	text-align: center;
+	font-family: "Courier New", courier, monospace;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.logo {
+	float: left;
+	padding-left: 40px;
+	padding-top: 45px;
+}
+
+.content {
+	background-color: #70DBDB;
+	clear: left;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: "Courier New", courier, monospace;
+	font-size: 40px;
+	height: 75%;
+	color: white;
+}
+
+h1{
+	height: 200px;
+	width: 100%;
+	background-image: url("MarvelousMathematics.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #70DBDB;
+	font-weight: bold;
+	margin-bottom: 0;
+	padding-top: 15px;
+}
+
+body {
+	background-color: #f6f6f6;
+}
