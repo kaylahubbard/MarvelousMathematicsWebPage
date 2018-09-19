@@ -1,7 +1,6 @@
 <html>
-
-<?php include_once(MMHeader.html) ?>
-
+	<?php include_once("MMHeader.html"); ?>
+	
 	<body>
 		</div>
 		<div class="content">

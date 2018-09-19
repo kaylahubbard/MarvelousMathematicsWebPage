@@ -1,3 +1,3 @@
 <?php
-include 'MMLogin.php'
+include 'MMTest.html'
 ?>
