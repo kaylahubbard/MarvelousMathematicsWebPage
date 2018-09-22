@@ -5,14 +5,14 @@ ul {
 }
 
 
-li{
+li {
 	float: left;
 	margin-right: 60px;
 	font-size: 20px;
 	font-family: "Courier New", courier, monospace;
 }
 
-.navBar{
+.navBar {
 	color: black;
 	margin-top: 1px;
 	padding-top: 10px;
@@ -47,16 +47,20 @@ li{
 	color: white;
 }
 
-#message{
+#message {
 	height: 200px;
 	width: 200px;
 }
 
-table{
-	float: left;
+table {
+	width: 100%;
 }
 
-h1{
+td {
+	width: 50%;
+}
+
+h1 {
 	height: 200px;
 	width: 100%;
 	background-image: url("MarvelousMathematics.jpg");
