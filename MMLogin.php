@@ -2,7 +2,6 @@
 	<?php require_once "MMHeader.php"; ?>
 	
 	<body>
-		</div>
 		<div class="content">
 			Sign up to begin your search!
 			<form>
@@ -13,5 +12,4 @@
 			</form>
 		</div>
 	</body>
-
 </html>
