@@ -20,7 +20,7 @@
 		<div class = "navBar">
 			<ul>
 				<li><a href="MMAbout.php">About</a></li>
-				<li>Lessons</li>
+				<li><a href="MMLessons.php">Lessons</a></li>
 				<li>Submit a Lesson</li>
 			</ul>
 		</div>
