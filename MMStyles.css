@@ -54,10 +54,15 @@ li {
 
 table {
 	width: 100%;
+	background-color: #70DBDB;
+	font-family: "Courier New", courier, monospace;
+	font-size: 30px;
+	color: white;
 }
 
 td {
 	width: 50%;
+	text-align: center;
 }
 
 h1 {
