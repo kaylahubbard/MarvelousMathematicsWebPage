@@ -34,7 +34,7 @@ li{
 	padding-top: 45px;
 }
 
-.content, .about {
+.content, .about, .contact {
 	background-color: #70DBDB;
 	clear: left;
 	text-align: center;
@@ -50,7 +50,16 @@ li{
 .about{
 	width: 50%;
 	height: 100%;
-	font-size: 20px;
+	font-size: 30px;
+}
+
+.contact{
+	float: right;
+	width: 50%;
+}
+
+#message{
+	height: 200px;
 }
 
 h1{

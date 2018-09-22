@@ -10,5 +10,14 @@
 			So this is a place to help you to not recreate the wheel!
 		</div>
 		
+		<div class="contact">
+			<form>
+				Name:
+				<input type="text"><br>
+				Email:
+				<input type="text"><br>
+				Message:
+				<textarea id="message">
+		</div>
 	</body>
 </html>
