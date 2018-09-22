@@ -11,7 +11,7 @@
 				<input type="checkbox" name="k-5">K-5
 				<input type="checkbox" name="6-8">6-8
 				<input type="checkbox" name="9-12">9-12<br>
-				Lesson Description:
+				Lesson Description:<br>
 				<textarea id="message"></textarea>
 			</form>
 		</div>

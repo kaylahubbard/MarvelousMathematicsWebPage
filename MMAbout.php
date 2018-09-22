@@ -18,7 +18,7 @@
 					<input type="text"><br>
 					Email:
 					<input type="text"><br>
-					Message:
+					Message:<br>
 					<textarea id="message"></textarea>
 			</div></td>
 		</tr>
