@@ -10,7 +10,9 @@
 	
 		<h1>
 			<div class = "logo">
-				<img src="logo.jpg" href="MMLogin.php">
+				<a href="MMLogin.php">
+					<img src="logo.jpg">
+				</a>
 			</div>
 		</h1>
 		
