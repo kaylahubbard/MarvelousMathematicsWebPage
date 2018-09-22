@@ -3,7 +3,7 @@
 	
 	<body>
 		<div class="content">
-			Submit a Lesson!
+			Submit a Lesson!<br>
 			<form>
 				Lesson Name:
 				<input type="text"><br>
