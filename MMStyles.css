@@ -32,6 +32,7 @@ li{
 	float: left;
 	padding-left: 40px;
 	padding-top: 45px;
+	position: fixed;
 }
 
 .content, .about {
@@ -66,6 +67,7 @@ li{
 
 #message{
 	height: 200px;
+	width: 200px;
 }
 
 h1{
