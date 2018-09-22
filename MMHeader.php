@@ -21,7 +21,7 @@
 			<ul>
 				<li><a href="MMAbout.php">About</a></li>
 				<li><a href="MMLessons.php">Lessons</a></li>
-				<li>Submit a Lesson</li>
+				<li><a href="MMSubmitALesson.php">Submit a Lesson</a></li>
 			</ul>
 		</div>
 	</body>
