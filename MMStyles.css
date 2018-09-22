@@ -52,6 +52,10 @@ li{
 	width: 200px;
 }
 
+table{
+	float: left;
+}
+
 h1{
 	height: 200px;
 	width: 100%;
