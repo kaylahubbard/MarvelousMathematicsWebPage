@@ -1,5 +1,5 @@
 <html>
-	<?php include_once("MMHeader.html"); ?>
+	<?php require_once "MMHeader.php"; ?>
 	
 	<body>
 		</div>
