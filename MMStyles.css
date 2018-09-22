@@ -34,7 +34,7 @@ li{
 	padding-top: 45px;
 }
 
-.content, .about, .contact {
+.content, .about {
 	background-color: #70DBDB;
 	clear: left;
 	text-align: center;
@@ -56,6 +56,12 @@ li{
 .contact{
 	float: right;
 	width: 50%;
+	background-color: #70DBDB;
+	font-family: "Courier New", courier, monospace;
+	text-align: center;
+	font-size: 30px;
+	height: 100%;
+	color: white;
 }
 
 #message{
