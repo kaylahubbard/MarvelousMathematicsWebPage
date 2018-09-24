@@ -8,7 +8,9 @@
 				Username:
 				<input type="text"><br>
 				Password:
-				<input type="text">
+				<input type="text"><br>
+				<input type="submit" value="Create Account">
+				<input type="submit" value="Login">
 			</form>
 		</div>
 	</body>

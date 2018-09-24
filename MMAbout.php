@@ -13,11 +13,12 @@
 			</div></td>
 		
 			<td><div class="contact">
+				Contact us!
 				<form>
 					Name:
 					<input type="text"><br>
 					Email:
-					<input type="text"><br>
+					<input type="email"><br>
 					Message:<br>
 					<textarea id="message"></textarea>
 			</div></td>

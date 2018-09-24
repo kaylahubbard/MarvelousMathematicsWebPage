@@ -12,7 +12,9 @@
 				<input type="checkbox" name="6-8">6-8
 				<input type="checkbox" name="9-12">9-12<br>
 				Lesson Description:<br>
-				<textarea id="message"></textarea>
+				<textarea id="message"></textarea><br>
+				Upload File:
+				<input type="file" name="lessonFile">
 			</form>
 		</div>
 	</body>
