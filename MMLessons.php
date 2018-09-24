@@ -5,10 +5,10 @@
 		<table>
 			<tr>
 				<td>
-				Lesson: will pull the lesson name from a submission.
-				Content Level: will pull the level from a submission.
-				Description: will pull the description from a submission.
-				Attached File: will pull the file from a submission.
+				Lesson: will pull the lesson name from a submission.<br>
+				Content Level: will pull the level from a submission.<br>
+				Description: will pull the description from a submission.<br>
+				Attached File: will pull the file from a submission.<br>
 				</td>
 			</tr>
 		</table>
