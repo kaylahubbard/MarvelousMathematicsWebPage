@@ -12,5 +12,6 @@
 				</td>
 			</tr>
 		</table>
+		<?php require_once "MMFooter.php"; ?>
 	</body>
 </html>

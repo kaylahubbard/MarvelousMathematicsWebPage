@@ -13,5 +13,6 @@
 				<input type="submit" value="Login">
 			</form>
 		</div>
+		<?php require_once "MMFooter.php"; ?>
 	</body>
 </html>

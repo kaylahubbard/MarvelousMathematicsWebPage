@@ -17,5 +17,6 @@
 				<input type="file" name="lessonFile">
 			</form>
 		</div>
+		<?php require_once "MMFooter.php"; ?>
 	</body>
 </html>
