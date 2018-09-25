@@ -1,3 +1,4 @@
+<?php $thisPage="About"; ?>
 <html>
 	<?php require_once "MMHeader.php"; ?>
 	

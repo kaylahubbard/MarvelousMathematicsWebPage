@@ -1,3 +1,4 @@
+<?php $thisPage="Submit A Lesson"; ?>
 <html>
 	<?php require_once "MMHeader.php"; ?>
 	

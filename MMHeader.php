@@ -21,9 +21,12 @@
 		</div>
 		<div class = "navBar">
 			<ul>
-				<li><a href="MMAbout.php">About</a></li>
-				<li><a href="MMLessons.php">Lessons</a></li>
-				<li><a href="MMSubmitALesson.php">Submit a Lesson</a></li>
+				<li <?php if ($thisPage=="About") echo " id=\"currentpage\""; ?>>
+					<a href="MMAbout.php">About</a></li>
+				<li <?php if ($thisPage=="Lessons") echo " id=\"currentpage\""; ?>>
+					<a href="MMLessons.php">Lessons</a></li>
+				<li <?php if ($thisPage=="Submit A Lesson") echo " id=\"currentpage\""; ?>>
+				<a href="MMSubmitALesson.php">Submit a Lesson</a></li>
 			</ul>
 		</div>
 	</body>

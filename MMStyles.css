@@ -12,7 +12,7 @@ li {
 	font-family: "Courier New", courier, monospace;
 }
 
-.footer > li {
+.footer li {
 	color: #000000;
 	font-size: 7px;
 	margin-top: 0;
@@ -85,23 +85,14 @@ h1 {
 	padding-top: 15px;
 }
 
-a:link {
+a:link, a:visited {
 	color:black;
 	text-decoration: none;
 }
 
-a:visited {
-	color:#70DBDB;
-}
-
-a:hover {
+a:hover, #currentpage {
 	color:white;
 	background-color: #70DBDB;
-}
-
-a:active {
-	color:white;
-	background-color:#70DBDB;
 }
 
 body {
