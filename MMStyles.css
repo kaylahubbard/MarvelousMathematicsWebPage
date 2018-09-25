@@ -5,7 +5,7 @@ ul {
 }
 
 
-li {
+.navBar > li {
 	float: left;
 	margin-right: 60px;
 	font-size: 20px;
