@@ -14,10 +14,13 @@ li {
 
 .footer li {
 	color: #000000;
-	font-size: 10px;
+	font-size: 15px;
 	margin-top: 0;
 	text-align: center;
-	margin-right: 25%;
+}
+
+.footer {
+	padding-right: 25%;
 }
 
 .navBar {
