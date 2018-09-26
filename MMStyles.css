@@ -35,7 +35,7 @@ li {
 }
 
 .logo {
-	position: relative;
+	position: absolute;
 	float: left;
 	padding-left: 40px;
 	padding-top: 45px;
