@@ -7,17 +7,14 @@
 	<body>
 		<div class="content">
 			Sign up to begin your search!
-		<?php if (isset($_SESSION['message'])){?>
-		
-			<div class="content">
-		<?php
-			foreach($_SESSION['message'] as $messages){?>
+		<?php if (isset($_SESSION['message'])){
+				foreach($_SESSION['message'] as $messages){?>
 				<div class="message">
 					<?php echo $messages; ?>
 				</div>
 				<?php }
 					unset($_SESSION['message']);
-				?></div>
+				?>
 		<?php } ?>		
 			<form method=POST action=loginHandler.php>
 				Username:
