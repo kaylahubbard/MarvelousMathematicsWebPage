@@ -22,10 +22,10 @@
 		exit;
 	}
 	
-	require_once 'DAO.php'
+	require_once 'DAO.php';
 	$dao = new DAO();
 	$dao -> saveLogin($username, $password);
 	header('Location: MMAbout.php');
 	exit;
-	
+	?>
 	
