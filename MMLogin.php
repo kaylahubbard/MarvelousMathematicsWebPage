@@ -1,6 +1,9 @@
 <html>
-	<?php require_once "MMHeader.php"; ?>
+	<?php require_once "MMHeader.php"; 
 	
+	
+	session_start();
+	?>
 	<body>
 		<div class="content">
 			Sign up to begin your search!
