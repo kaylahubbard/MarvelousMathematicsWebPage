@@ -54,6 +54,13 @@ li {
 	color: white;
 }
 
+.message {
+	background-color: #FF0000;
+	color: white;
+	font-family: "Courier New", courier, monospace;
+	font-size: 20px;
+}
+
 #message {
 	height: 100px;
 	width: 500px;

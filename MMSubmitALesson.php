@@ -9,9 +9,9 @@
 				Lesson Name:
 				<input type="text"><br>
 				Good For Levels:
-				<input type="checkbox" name="k-5">K-5
-				<input type="checkbox" name="6-8">6-8
-				<input type="checkbox" name="9-12">9-12<br>
+				<input type="checkbox" name="k-5" value="k-5">K-5
+				<input type="checkbox" name="6-8" value="6-8">6-8
+				<input type="checkbox" name="9-12" value="9-12">9-12<br>
 				Lesson Description:<br>
 				<textarea id="message"></textarea><br>
 				Upload File:

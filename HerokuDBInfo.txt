@@ -1,0 +1,9 @@
+mysql://b4c161f1606bdb:228f00f4@us-cdbr-iron-east-01.cleardb.net/heroku_74e889dbb88746c?reconnect=true
+
+DB Host: us-cdbr-iron-east-01.cleardb.net
+
+DB DataBase: heroku_74e889dbb88746c
+
+DB Username: b4c161f1606bdb
+
+DB Password: 228f00f4
