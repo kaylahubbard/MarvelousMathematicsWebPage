@@ -10,7 +10,7 @@
 		<?php if (isset($_SESSION['message'])){
 				foreach($_SESSION['message'] as $messages){?>
 				<div class="message">
-					<?php echo $message; ?>
+					<?php echo $messages; ?>
 				</div>
 				<?php }
 					unset($_SESSION['message']);
