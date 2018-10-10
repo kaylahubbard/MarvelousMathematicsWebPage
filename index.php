@@ -1,4 +1,3 @@
 <?php
-	print_r("here");
-	include 'MMLogin.php'
+	require_once 'MMLogin.php'
 ?>
