@@ -16,7 +16,7 @@
 			<td><div class="contact">
 				Contact us!
 				<?php if (isset($_SESSION['message'])){
-				foreach($_SESSION['message'] as $messages){?>
+					foreach($_SESSION['message'] as $messages){?>
 				<div class="message">
 					<?php echo $messages; ?>
 				</div>
