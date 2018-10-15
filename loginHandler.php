@@ -21,20 +21,24 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
-	if(isset($_POST["Create Account"])){
-		$dao -> saveLogin($username, $password);
-		header('Location: MMAbout.php');
-		exit;
-	}else if (isset($_POST["Login"])){
-		if($username == $dao->getUser() && $password == $dao->getPassword()){
-			header('Location: MMAbout.php');
-			exit;
-		}else{
-			$_SESSION['message'][] = "Username or Password is incorrect.";
-			$bad = true;
-			exit;
-		}
-	}
+	$dao -> saveLogin($username, $password);
+	header('Location: MMAbout.php');
+	exit;
+	
+	//if(isset($_POST["Create Account"])){
+	//	$dao -> saveLogin($username, $password);
+	//	header('Location: MMAbout.php');
+	//	exit;
+	//}else if (isset($_POST["Login"])){
+	//	if($username == $dao->getUser() && $password == $dao->getPassword()){
+	//		header('Location: MMAbout.php');
+	//		exit;
+	//	}else{
+	//		$_SESSION['message'][] = "Username or Password is incorrect.";
+	//		$bad = true;
+	//		exit;
+	//	}
+	//}
 	
 	
 	if($bad){
