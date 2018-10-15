@@ -24,14 +24,13 @@
 					unset($_SESSION['message']);
 				?>
 				<?php } ?>	
-				<form>
+				<form method=POST action=MMContactHandler.php>
 					Name:
 					<input type="text" name="name"><br>
 					Email:
 					<input type="email" name="email"><br>
 					Message:<br>
-					<textarea id="message" name="message"></textarea>
-					Submit:<br>
+					<textarea id="message" name="message"></textarea><br>
 					<input type = "submit" value = "Submit">
 			</div></td>
 		</tr>
