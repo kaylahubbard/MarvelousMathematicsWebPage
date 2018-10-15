@@ -22,4 +22,14 @@ class DAO {
 			$q ->execute();
 	
 	}
+	
+	public function getUser(){
+		$conn = $this->getConnection();
+		return $conn->query("select id, username from user", PDO::FETCH_ASSOC);
+	}
+	
+	public function getPass(){
+		$conn = $this->getConnection();
+		return $conn->query("select id, password from user", PDO::FETCH_ASSOC);
+	}
 }
