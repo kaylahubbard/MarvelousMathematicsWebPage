@@ -31,6 +31,8 @@
 					<input type="email" name="email"><br>
 					Message:<br>
 					<textarea id="message" name="message"></textarea>
+					Submit:<br>
+					<input type = "submit" value = "Submit">
 			</div></td>
 		</tr>
 		</table>
