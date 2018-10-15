@@ -36,6 +36,7 @@
 			exit;
 		}else{
 			$_SESSION['message'][] = "Username or Password is incorrect.";
+			exit;
 		}
 	}
 	?>
