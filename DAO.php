@@ -25,11 +25,24 @@ class DAO {
 	
 	public function getUser(){
 		$conn = $this->getConnection();
-		return $conn->query("select id, username from user", PDO::FETCH_ASSOC);
+		return $conn->query("select username from user", PDO::FETCH_ASSOC);
 	}
 	
 	public function getPass(){
 		$conn = $this->getConnection();
-		return $conn->query("select id, password from user", PDO::FETCH_ASSOC);
+		return $conn->query("select password from user", PDO::FETCH_ASSOC);
 	}
+	
+	public function saveContact($name, $email, $message){
+			$conn = $this->getConnection();
+			$saveQuery = 
+				"INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
+			$q = $conn->prepare($saveQuery);
+			$q ->bindParam(":name", $name);
+			$q ->bindParam(":email", $email);
+			$q ->bindParam(":message", $message);
+			$q ->execute();
+	
+	}
+	
 }

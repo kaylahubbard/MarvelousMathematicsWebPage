@@ -15,13 +15,22 @@
 		
 			<td><div class="contact">
 				Contact us!
+				<?php if (isset($_SESSION['message'])){
+				foreach($_SESSION['message'] as $messages){?>
+				<div class="message">
+					<?php echo $messages; ?>
+				</div>
+				<?php }
+					unset($_SESSION['message']);
+				?>
+				<?php } ?>	
 				<form>
 					Name:
-					<input type="text"><br>
+					<input type="text" name="name"><br>
 					Email:
-					<input type="email"><br>
+					<input type="email" name="email"><br>
 					Message:<br>
-					<textarea id="message"></textarea>
+					<textarea id="message" name="message"></textarea>
 			</div></td>
 		</tr>
 		</table>

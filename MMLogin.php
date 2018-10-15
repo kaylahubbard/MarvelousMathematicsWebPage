@@ -21,8 +21,8 @@
 				<input type="text" name="username"><br>
 				Password:
 				<input type="password" name="password"><br>
-				<input type="submit" value="Create Account">
-				<input type="submit" value="Login">
+				<input type="submit" value="Create Account" name="createButton">
+				<input type="submit" value="Login" name="loginButton">
 			</form>
 		</div>
 		<?php require_once "MMFooter.php"; ?>
