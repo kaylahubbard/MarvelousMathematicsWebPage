@@ -17,11 +17,6 @@
 		$bad = true;
 	}
 	
-	if($bad){
-		header('Location: MMLogin.php');
-		exit;
-	}
-	
 	
 	require_once 'DAO.php';
 	$dao = new DAO();
@@ -36,8 +31,15 @@
 			exit;
 		}else{
 			$_SESSION['message'][] = "Username or Password is incorrect.";
+			$bad = true;
 			exit;
 		}
+	}
+	
+	
+	if($bad){
+		header('Location: MMLogin.php');
+		exit;
 	}
 	?>
 	
