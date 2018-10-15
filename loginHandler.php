@@ -16,7 +16,10 @@
 		$_SESSION['message'][] = "Password is Required";
 		$bad = true;
 	}
-	
+	if($bad){
+		header('Location: MMLogin.php');
+		exit;
+	}
 	
 	require_once 'DAO.php';
 	$dao = new DAO();
@@ -41,9 +44,6 @@
 	//}
 	
 	
-	if($bad){
-		header('Location: MMLogin.php');
-		exit;
-	}
+	
 	?>
 	
