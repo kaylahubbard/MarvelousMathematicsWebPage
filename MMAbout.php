@@ -1,6 +1,8 @@
 <?php $thisPage="About"; ?>
 <html>
-	<?php require_once "MMHeader.php"; ?>
+	<?php 
+	session_start();
+	require_once "MMHeader.php"; ?>
 	
 	<body>
 		<table>
