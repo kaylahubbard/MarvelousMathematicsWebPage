@@ -7,6 +7,8 @@
 	$message = array();
 	$bad = false;
 	
+	$_SESSION['presets']['username'] = $username;
+	
 	if(empty($username)){
 		$_SESSION['message'][] = "Username is Required";
 		$bad = true;
@@ -20,6 +22,8 @@
 		header('Location: MMLogin.php');
 		exit;
 	}
+	
+	unset($_SESSION['presets']);
 	
 	require_once 'DAO.php';
 	$dao = new DAO();

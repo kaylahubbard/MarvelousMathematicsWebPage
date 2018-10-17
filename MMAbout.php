@@ -2,7 +2,8 @@
 <html>
 	<?php 
 	session_start();
-	require_once "MMHeader.php"; ?>
+	require_once "MMHeader.php"; 
+	?>
 	
 	<body>
 		<table>
