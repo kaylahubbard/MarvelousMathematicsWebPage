@@ -8,6 +8,10 @@
 	$message = array();
 	$bad = false;
 	
+	$_SESSION['presets']['name'] = $name;
+	$_SESSION['presets']['email'] = $email;
+	$_SESSION['presets']['msg'] = $msg;
+	
 	if(empty($name)){
 		$_SESSION['message'][] = "Name is Required";
 		$bad = true;
@@ -27,6 +31,8 @@
 		header('Location: MMAbout.php');
 		exit;
 	}
+	
+	unset($_SESSION['presets']);
 	
 	require_once 'DAO.php';
 	$dao = new DAO();

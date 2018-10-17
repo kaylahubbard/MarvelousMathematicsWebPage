@@ -30,11 +30,11 @@
 				<?php } ?>	
 				<form method=POST action=MMContactHandler.php>
 					Name:
-					<input type="text" name="name"><br>
+					<input type="text" name="name" value="<?php echo isset($_SESSION['presets']['name']) ? $_SESSION['presets']['name'] : ''; ?>"><br>
 					Email:
-					<input type="email" name="email"><br>
+					<input type="email" name="email" value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ''; ?>"><br>
 					Message:<br>
-					<textarea id="message" name="message"></textarea><br>
+					<textarea id="message" name="message" value="<?php echo isset($_SESSION['presets']['msg']) ? $_SESSION['presets']['msg'] : ''; ?>"></textarea><br>
 					<input type = "submit" value = "Submit">
 			</div></td>
 		</tr>
