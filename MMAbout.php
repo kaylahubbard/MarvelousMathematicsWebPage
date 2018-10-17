@@ -19,6 +19,7 @@
 					foreach($_SESSION['message'] as $messages){?>
 				<div class="message">
 					<?php echo $messages; ?>
+					here
 				</div>
 				<?php }
 					unset($_SESSION['message']);
