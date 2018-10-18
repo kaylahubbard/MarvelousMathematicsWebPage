@@ -15,10 +15,10 @@ class DAO {
 	public function saveLogin($name, $pass){
 			$conn = $this->getConnection();
 			$saveQuery = 
-				"INSERT INTO user (name, pass) VALUES (:name, :pass)";
+				"INSERT INTO user (username, password) VALUES (:username, :password)";
 			$q = $conn->prepare($saveQuery);
-			$q ->bindParam(":name", $name);
-			$q ->bindParam(":pass", $pass);
+			$q ->bindParam(":username", $name);
+			$q ->bindParam(":password", $pass);
 			$q ->execute();
 	
 	}

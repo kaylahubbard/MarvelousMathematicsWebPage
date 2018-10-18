@@ -23,6 +23,7 @@
 		exit;
 	}
 	
+	//All is good
 	unset($_SESSION['presets']);
 	
 	require_once 'DAO.php';
@@ -46,7 +47,6 @@
 	//		exit;
 	//	}
 	//}
-	
 	
 	
 	?>

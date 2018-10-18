@@ -34,7 +34,9 @@
 					Email:
 					<input type="email" name="email" value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ''; ?>"><br>
 					Message:<br>
-					<textarea id="message" name="message"><?php echo isset($_SESSION['presets']['msg']) ? $_SESSION['presets']['msg'] : ''; ?></textarea><br>
+					<textarea id="message" name="message">
+						<?php echo isset($_SESSION['presets']['msg']) ? $_SESSION['presets']['msg'] : ''; ?>
+					</textarea><br>
 					<input type = "submit" value = "Submit">
 			</div></td>
 		</tr>
