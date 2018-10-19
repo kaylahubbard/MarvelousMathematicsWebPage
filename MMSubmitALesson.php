@@ -30,6 +30,8 @@
 				</textarea><br>
 				Upload File:
 				<input type="file" name="lessonFile">
+				Submit:
+				<input type="submit" value="Submit">
 			</form>
 		</div>
 		<?php require_once "MMFooter.php"; ?>
