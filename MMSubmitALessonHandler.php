@@ -1,34 +1,33 @@
 <?php
 
 	session_start();
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$msg = $_POST['message'];
+	$lesson = $_POST['lesson'];
+	$Gk5 = $_POST['k-5'];
+	$G68 = $_POST['6-8'];
+	$G912 = $_POST['9-12'];
+	$description = $_POST['description'];
 	
 	$message = array();
 	$bad = false;
 	
-	$_SESSION['presets']['name'] = $name;
-	$_SESSION['presets']['email'] = $email;
-	$_SESSION['presets']['msg'] = $msg;
+	$_SESSION['presets']['lesson'] = $lesson;
+	$_SESSION['presets']['description'] = $description;
+	$_SESSION['presets']['Gk5'] = $Gk5;
+	$_SESSION['presets']['G68'] = $G68;
+	$_SESSION['presets']['G912'] = $G912;
 	
-	if(empty($name)){
-		$_SESSION['message'][] = "Name is Required";
+	if(empty($lesson)){
+		$_SESSION['message'][] = "Lesson name is Required";
 		$bad = true;
 	}
 	
-	if(empty($email)){
-		$_SESSION['message'][] = "Email is Required";
-		$bad = true;
-	}
-	
-	if(empty($msg)){
-		$_SESSION['message'][] = "A message is required";
+	if(empty($description)){
+		$_SESSION['message'][] = "A description is Required";
 		$bad = true;
 	}
 	
 	if($bad){
-		header('Location: MMAbout.php');
+		header('Location: MMSubmitALesson.php');
 		exit;
 	}
 	
@@ -37,6 +36,6 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
-	$dao -> saveContact($name, $email, $msg);
+	//$dao -> saveLesson($lesson, $Gk5, $G68, $G912, $description);
 	header('Location: MMAbout.php');
 	exit;
