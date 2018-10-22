@@ -44,15 +44,12 @@
 		}else{
 			$_SESSION['message'][] = "Username or Password is incorrect.";
 			$bad = true;
-			exit;
+			
 		}
 	}	
 	
 	header('Location: MMLogin.php');
 	exit;
 	
-
-	
-	
-	?>
+?>
 	
