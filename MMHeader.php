@@ -13,7 +13,7 @@
 			<div class = "logo">
 				<a href="MMLogin.php">
 					<img src="logo.jpg">
-				</a>
+				</a><br>
 				Click to logout.
 			</div>
 		</h1>
