@@ -17,12 +17,12 @@
 	$_SESSION['presets']['G912'] = $G912;
 	
 	if(empty($lesson)){
-		$_SESSION['message'][] = "Lesson name is Required";
+		$_SESSION['message'][] = "Lesson name is required";
 		$bad = true;
 	}
 	
 	if(empty($description)){
-		$_SESSION['message'][] = "A description is Required";
+		$_SESSION['message'][] = "A description is required";
 		$bad = true;
 	}
 	

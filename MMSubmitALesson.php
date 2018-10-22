@@ -29,7 +29,7 @@
 					<?php echo isset($_SESSION['presets']['description']) ? $_SESSION['presets']['description'] : ''; ?>
 				</textarea><br>
 				Upload File:
-				<input type="file" name="lessonFile">
+				<input type="file" name="lessonFile"><br>
 				Submit:
 				<input type="submit" value="Submit">
 			</form>
