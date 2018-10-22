@@ -34,7 +34,7 @@ li {
 	margin-top: 0;
 }
 
-.logo {
+.logo, h1 {
 	position: absolute;
 	float: left;
 	padding-left: 40px;
