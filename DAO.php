@@ -31,13 +31,24 @@ class DAO {
 	//checks unique username
 	public function getUser($username){
 		$conn = $this->getConnection();
-		return $conn->query("select username from user where username=:username", PDO::FETCH_ASSOC);
+		$q = $conn->prepare("select username from user where username=:username");
+		$q -> bindParam(":username", $username);
+		$q -> setFetchMode(PDO::FETCH_ASSOC);
+		$q -> execute();
+		$result -> $q->fetchAll();
+		return $result
 	}
 	
 	//checks username and password
 	public function getUser($username, $password){
 		$conn = $this->getConnection();
-		return $conn->query("select username from user", PDO::FETCH_ASSOC);
+		$q = $conn->prepare("select username from user where username=:username and password = :password");
+		$q -> bindParam(":username", $username);
+		$q -> bindParam(":password", $password);
+		$q -> setFetchMode(PDO::FETCH_ASSOC);
+		$q -> execute();
+		$result -> $q->fetchAll();
+		return $result
 	}
 
 	
