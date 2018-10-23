@@ -14,7 +14,7 @@
 				<a href="MMLogin.php">
 					<img src="logo.jpg">
 				</a><br>
-				Click to logout.
+				Logout.
 			</div>
 			
 		</h1>
