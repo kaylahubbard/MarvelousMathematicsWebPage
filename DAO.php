@@ -22,7 +22,7 @@ class DAO {
 			$q->execute();
 	
 	}
-	
+	/*
 	public function getUser(){
 		$conn=$this->getConnection();
 		return $conn->query("select username from user", PDO::FETCH_ASSOC);
@@ -76,6 +76,6 @@ class DAO {
 		$q->bindParam(":name", $name);
 		$q->bindParam(":description", $description);
 	}
-
+*/
 	
 }
