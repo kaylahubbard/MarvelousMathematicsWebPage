@@ -35,7 +35,7 @@
 			header('Location: MMAbout.php');
 			exit;
 		}
-		//input a message
+		$_SESSION['message'][]= "That username already exists";
 	}else if (isset($_POST['loginButton'])){
 		$login=$dao->getUser($username, $password);
 		if(!empty($login)){
