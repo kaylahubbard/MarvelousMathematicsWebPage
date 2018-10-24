@@ -11,43 +11,43 @@ class DAO {
     return
       new PDO("mysql:host={$this->host};dbname={$this->dataBase}", $this->userName, $this->password);
 	}
-	/*
+	
 	public function saveLogin($name, $pass){
-			$conn = $this->getConnection();
+			$conn=$this->getConnection();
 			$saveQuery = 
 				"INSERT INTO user (username, password) VALUES (:username, :password)";
-			$q = $conn->prepare($saveQuery);
-			$q ->bindParam(":username", $name);
-			$q ->bindParam(":password", $pass);
-			$q ->execute();
+			$q=$conn->prepare($saveQuery);
+			$q->bindParam(":username", $name);
+			$q->bindParam(":password", $pass);
+			$q->execute();
 	
 	}
 	
 	public function getUser(){
-		$conn = $this->getConnection();
+		$conn=$this->getConnection();
 		return $conn->query("select username from user", PDO::FETCH_ASSOC);
 	}
 	
 	//checks unique username
 	public function getUser($username){
-		$conn = $this->getConnection();
-		$q = $conn->prepare("select username from user where username=:username");
+		$conn=$this->getConnection();
+		$q=$conn->prepare("select username from user where username=:username");
 		$q->bindParam(":username", $username);
-		$q -> setFetchMode(PDO::FETCH_ASSOC);
-		$q -> execute();
-		$result -> $q->fetchAll();
+		$q->setFetchMode(PDO::FETCH_ASSOC);
+		$q->execute();
+		$result->$q->fetchAll();
 		return $result
 	}
 	
 	//checks username and password
 	public function getUser($username, $password){
-		$conn = $this->getConnection();
-		$q = $conn->prepare("select username from user where username=:username and password = :password");
-		$q -> bindParam(":username", $username);
-		$q -> bindParam(":password", $password);
-		$q -> setFetchMode(PDO::FETCH_ASSOC);
-		$q -> execute();
-		$result -> $q->fetchAll();
+		$conn=$this->getConnection();
+		$q=$conn->prepare("select username from user where username=:username and password = :password");
+		$q->bindParam(":username", $username);
+		$q->bindParam(":password", $password);
+		$q->setFetchMode(PDO::FETCH_ASSOC);
+		$q->execute();
+		$result->$q->fetchAll();
 		return $result
 	}
 
@@ -62,19 +62,19 @@ class DAO {
 			$saveQuery = 
 				"INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
 			$q = $conn->prepare($saveQuery);
-			$q ->bindParam(":name", $name);
-			$q ->bindParam(":email", $email);
-			$q ->bindParam(":message", $message);
-			$q ->execute();
+			$q->bindParam(":name", $name);
+			$q->bindParam(":email", $email);
+			$q->bindParam(":message", $message);
+			$q->execute();
 	
 	}
 
 	public function saveLesson($name, $description){
-		$conn = $this->getConnection();
+		$conn=$this->getConnection();
 		$saveQuery= " INSERT INTO lesson (name, description) VALUES (:name, :description)";
-		$q = $conn -> prepare($saveQuery);
+		$q=$conn -> prepare($saveQuery);
 		$q->bindParam(":name", $name);
-		$q -> bindParam(":description", $description);
+		$q->bindParam(":description", $description);
 	}
 	*/
 	
