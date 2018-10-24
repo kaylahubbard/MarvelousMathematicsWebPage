@@ -114,3 +114,8 @@ a:hover {
 body {
 	background-color: #f6f6f6;
 }
+
+input[type="checkbox"]{
+	width: 30px;
+	height: 30px;
+}
