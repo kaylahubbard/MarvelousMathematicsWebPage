@@ -11,7 +11,7 @@ class DAO {
     return
       new PDO("mysql:host={$this->host};dbname={$this->dataBase}", $this->userName, $this->password);
 	}
-	
+	/*
 	public function saveLogin($name, $pass){
 			$conn = $this->getConnection();
 			$saveQuery = 
@@ -32,7 +32,7 @@ class DAO {
 	public function getUser($username){
 		$conn = $this->getConnection();
 		$q = $conn->prepare("select username from user where username=:username");
-		$q -> bindParam(":username", $username);
+		$q->bindParam(":username", $username);
 		$q -> setFetchMode(PDO::FETCH_ASSOC);
 		$q -> execute();
 		$result -> $q->fetchAll();
@@ -76,6 +76,6 @@ class DAO {
 		$q->bindParam(":name", $name);
 		$q -> bindParam(":description", $description);
 	}
-	
+	*/
 	
 }
