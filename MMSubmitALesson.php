@@ -21,7 +21,7 @@
 				Lesson Name:
 				<input type="text" name="lesson" value="<?php echo isset($_SESSION['presets']['lesson']) ? $_SESSION['presets']['lesson'] : ''; ?>"><br>
 				Good For Levels:
-				<label id="k5">K-5</label>
+				<label for="k5">K-5</label>
 				<input type="checkbox" id="k5" name="k-5" value="k-5">
 				<label id="k5">K-5</label>
 				<input type="checkbox" name="6-8" value="6-8">6-8
