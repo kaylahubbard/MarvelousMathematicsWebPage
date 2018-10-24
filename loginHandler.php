@@ -27,6 +27,9 @@
 	unset($_SESSION['presets']);
 	
 	require_once 'DAO.php';
+	echo "got here";
+	exit;
+	/*
 	$dao = new DAO();
 	if(isset($_POST['createButton'])){
 		$user=$dao->getUser($username);
@@ -49,7 +52,7 @@
 	}	
 	
 	header('Location: MMLogin.php');
-	exit;
+	exit;*/
 	
 ?>
 	
