@@ -26,7 +26,7 @@
 				<label for="6_8">6-8</label>
 				<input type="checkbox" id="6_8" name="6-8" value="6-8">
 				<label for="9_12">9-12</label>
-				<input type="checkbox" name="9-12" value="9-12"><br>
+				<input type="checkbox" name="9-12" id="9_12" value="9-12"><br>
 				Lesson Description:<br>
 				<textarea id="message" name="description">
 				<?php echo isset($_SESSION['presets']['description']) ? $_SESSION['presets']['description'] : ''; ?>
