@@ -72,10 +72,10 @@ class DAO {
 	public function saveLesson($name, $description){
 		$conn=$this->getConnection();
 		$saveQuery= " INSERT INTO lesson (name, description) VALUES (:name, :description)";
-		$q=$conn -> prepare($saveQuery);
+		$q=$conn->prepare($saveQuery);
 		$q->bindParam(":name", $name);
 		$q->bindParam(":description", $description);
 	}
-	*/
+
 	
 }
