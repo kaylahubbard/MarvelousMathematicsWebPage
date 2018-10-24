@@ -27,11 +27,11 @@
 	unset($_SESSION['presets']);
 	
 	require_once 'DAO.php';
-	
-	$dao = new DAO();
-	echo "got here";
+		echo "got here";
 	exit;
 	/*
+	$dao = new DAO();
+
 	if(isset($_POST['createButton'])){
 		$user=$dao->getUser($username);
 		if(empty($user)){
