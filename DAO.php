@@ -27,7 +27,7 @@ class DAO {
 		$conn=$this->getConnection();
 		return $conn->query("select username from user", PDO::FETCH_ASSOC);
 	}
-	/*
+	
 	//checks unique username
 	public function getUser($username){
 		$conn=$this->getConnection();
@@ -38,7 +38,7 @@ class DAO {
 		$result->$q->fetchAll();
 		return $result
 	}
-	
+	/*
 	//checks username and password
 	public function getUser($username, $password){
 		$conn=$this->getConnection();
