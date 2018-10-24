@@ -22,12 +22,12 @@ class DAO {
 			$q->execute();
 	
 	}
-	/*
+	
 	public function getUser(){
 		$conn=$this->getConnection();
 		return $conn->query("select username from user", PDO::FETCH_ASSOC);
 	}
-	
+	/*
 	//checks unique username
 	public function getUser($username){
 		$conn=$this->getConnection();
