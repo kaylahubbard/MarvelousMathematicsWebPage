@@ -17,8 +17,8 @@
 				?>
 		<?php } ?>		
 			<form method=POST action=loginHandler.php>
-				Username:
-				<input type="text" name="username" value="<?php echo isset($_SESSION['presets']['username']) ? $_SESSION['presets']['username'] : ''; ?>"><br>
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" value="<?php echo isset($_SESSION['presets']['username']) ? $_SESSION['presets']['username'] : ''; ?>"><br>
 				Password:
 				<input type="password" name="password"><br>
 				<input type="submit" value="Create Account" name="createButton">
