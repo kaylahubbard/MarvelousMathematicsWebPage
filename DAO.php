@@ -51,7 +51,7 @@ class DAO {
 		return $result;
 	}
 
-	/*
+	
 	public function getPass(){
 		$conn = $this->getConnection();
 		return $conn->query("select password from user", PDO::FETCH_ASSOC);
@@ -68,7 +68,7 @@ class DAO {
 			$q->execute();
 	
 	}
-
+/*
 	public function saveLesson($name, $description){
 		$conn=$this->getConnection();
 		$saveQuery= " INSERT INTO lesson (name, description) VALUES (:name, :description)";
