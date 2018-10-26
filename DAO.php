@@ -31,7 +31,7 @@ class DAO {
 	//checks unique username
 	public function getUser($username){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("select username from user where username = :username");
+		$q=$conn->prepare("select username from user where username = $username");
 		$q->bindParam(":username", $username);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
