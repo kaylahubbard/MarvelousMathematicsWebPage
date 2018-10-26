@@ -29,7 +29,7 @@ class DAO {
 	}
 	
 	
-	public function getUser($un){
+	public function getUserCheck($un){
 		$conn=$this->getConnection();
 		$q=$conn->prepare("select username from user where username = :username");
 		$q->bindParam(":username", $un);
