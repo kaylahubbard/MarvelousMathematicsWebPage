@@ -36,7 +36,7 @@ class DAO {
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result->$q->fetchAll();
-		return $result
+		return $result;
 	}
 	/*
 	//checks username and password
@@ -48,7 +48,7 @@ class DAO {
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result->$q->fetchAll();
-		return $result
+		return $result;
 	}
 
 	
