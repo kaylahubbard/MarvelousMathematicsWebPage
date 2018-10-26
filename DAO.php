@@ -28,19 +28,19 @@ class DAO {
 		return $conn->query("select username from user", PDO::FETCH_ASSOC);
 	}
 	
-	
-	public function getUserCheck($un){
+	//Checks the username
+	public function getUsername($username){
 		$conn=$this->getConnection();
 		$q=$conn->prepare("select username from user where username = :username");
-		$q->bindParam(":username", $un);
+		$q->bindParam(":username", $username);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result->$q->fetchAll();
 		return $result;
 	}
-	/*
+	
 	//checks username and password
-	public function getUser($username, $password){
+	public function getUserPassword($username, $password){
 		$conn=$this->getConnection();
 		$q=$conn->prepare("select username from user where username=:username and password = :password");
 		$q->bindParam(":username", $username);
@@ -51,7 +51,7 @@ class DAO {
 		return $result;
 	}
 
-	
+	/*
 	public function getPass(){
 		$conn = $this->getConnection();
 		return $conn->query("select password from user", PDO::FETCH_ASSOC);
