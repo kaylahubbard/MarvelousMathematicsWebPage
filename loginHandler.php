@@ -27,12 +27,13 @@
 	unset($_SESSION['presets']);
 	
 	require_once 'DAO.php';
-		echo "got here";
-	exit;
-	/*
+	
 	$dao = new DAO();
 
 	if(isset($_POST['createButton'])){
+		echo "got here";
+		
+		/*
 		$user=$dao->getUser($username);
 		if(empty($user)){
 			$dao -> saveLogin($username, $password);
@@ -40,7 +41,11 @@
 			exit;
 		}
 		$_SESSION['message'][]= "That username already exists";
+		*/
 	}else if (isset($_POST['loginButton'])){
+		echo "got here too";
+		
+		/*
 		$login=$dao->getUser($username, $password);
 		if(!empty($login)){
 			header('Location: MMAbout.php');
@@ -50,10 +55,11 @@
 			$bad = true;
 			
 		}
+		*/
 	}	
 	
-	header('Location: MMLogin.php');
-	exit;*/
+	//header('Location: MMLogin.php');
+	exit;
 	
 ?>
 	
