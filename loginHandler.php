@@ -34,6 +34,7 @@
 		
 		$user=$dao->getUsername($username);
 		echo "here";
+		/*
 		if(empty($user)){
 			echo "here too";
 			$dao->saveLogin($username, $password);
@@ -41,6 +42,7 @@
 			exit;
 		}
 		$_SESSION['message'][]= "That username already exists";
+		*/
 		
 	}else if (isset($_POST['loginButton'])){
 		/*
