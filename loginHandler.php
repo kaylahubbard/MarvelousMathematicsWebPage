@@ -32,7 +32,7 @@
 
 	if(isset($_POST['createButton'])){
 		
-		//$user=$dao->getUsername($username);
+		$user=$dao->getUsername($username);
 		echo "here";
 		/*
 		if(empty($user)){

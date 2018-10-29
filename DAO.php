@@ -29,10 +29,10 @@ class DAO {
 	}
 	
 	//Checks the username
-	public function getUsername($username){
+	public function getUsername($name){
 		$conn=$this->getConnection();
 		$q=$conn->prepare("select username from user where username = :username");
-		$q->bindParam(":username", $username);
+		$q->bindParam(":username", $name);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result->$q->fetchAll();
