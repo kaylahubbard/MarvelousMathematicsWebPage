@@ -33,7 +33,9 @@
 	if(isset($_POST['createButton'])){
 		
 		$user=$dao->getUsername($username);
+		echo "here";
 		if(empty($user)){
+			echo "here too";
 			$dao -> saveLogin($username, $password);
 			header('Location: MMAbout.php');
 			exit;
