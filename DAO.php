@@ -25,13 +25,13 @@ class DAO {
 	
 	public function getUser(){
 		$conn=$this->getConnection();
-		return $conn->query("select username from user", PDO::FETCH_ASSOC);
+		return $conn->query("SELECT username FROM user", PDO::FETCH_ASSOC);
 	}
 	
 	//Checks the username
 	public function getUsername($name){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("select username from user where username = :username");
+		$q=$conn->prepare("SELECT iduser FROM user WHERE username = :username");
 		$q->bindParam(":username", $name);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
