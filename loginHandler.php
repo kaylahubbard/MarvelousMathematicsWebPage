@@ -36,7 +36,7 @@
 		echo "here";
 		if(empty($user)){
 			echo "here too";
-			$dao -> saveLogin($username, $password);
+			$dao->saveLogin($username, $password);
 			header('Location: MMAbout.php');
 			exit;
 		}
