@@ -32,7 +32,8 @@
 
 	if(isset($_POST['createButton'])){
 		
-		$user=$dao->getUsername($username);
+		$dao->saveLogin($username, $password);
+		//$user=$dao->getUsername($username);
 		echo "here";
 		/*
 		if(empty($user)){
