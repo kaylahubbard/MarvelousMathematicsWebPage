@@ -31,22 +31,18 @@
 	$dao = new DAO();
 
 	if(isset($_POST['createButton'])){
-		echo "got here";
 		
-		/*
-		$user=$dao->getUser($username);
+		$user=$dao->getUsername($username);
 		if(empty($user)){
 			$dao -> saveLogin($username, $password);
 			header('Location: MMAbout.php');
 			exit;
 		}
 		$_SESSION['message'][]= "That username already exists";
-		*/
-	}else if (isset($_POST['loginButton'])){
-		echo "got here too";
 		
+	}else if (isset($_POST['loginButton'])){
 		/*
-		$login=$dao->getUser($username, $password);
+		$login=$dao->getUserPassword($username, $password);
 		if(!empty($login)){
 			header('Location: MMAbout.php');
 			exit;
@@ -56,6 +52,7 @@
 			
 		}
 		*/
+		
 	}	
 	
 	//header('Location: MMLogin.php');
