@@ -35,7 +35,7 @@
 		$dao->saveLogin($username, $password);
 		$user=$dao->getUsername($username);
 		echo "here";
-		echo $user;
+		echo "'". $user. "'";
 		/*
 		if(empty($user)){
 			echo "here too";
