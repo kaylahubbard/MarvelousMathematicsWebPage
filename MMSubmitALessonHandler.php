@@ -53,7 +53,7 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
-	if(isset('submit')){
+	if(isset($_POST['submit'])){
 		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description);
 		$_SESSION['message'][]="Thanks for submitting!";
 		header('Location: MMSubmitALesson.php');
