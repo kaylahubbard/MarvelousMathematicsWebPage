@@ -21,6 +21,7 @@
 	if (count($_FILES) > 0) {
 		if ($_FILES["file"]["error"] > 0) {
 			echo"here first";
+			exit;
 			throw new Exception("Error: " . $_FILES["file"]["error"]);
 		} else {
 			echo "here";
