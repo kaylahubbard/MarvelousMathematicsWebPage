@@ -47,10 +47,10 @@ class DAO {
 	}
 	
 	public function saveContact($name, $email, $message){
-			$conn = $this->getConnection();
-			$saveQuery = 
+			$conn=$this->getConnection();
+			$saveQuery= 
 				"INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
-			$q = $conn->prepare($saveQuery);
+			$q=$conn->prepare($saveQuery);
 			$q->bindParam(":name", $name);
 			$q->bindParam(":email", $email);
 			$q->bindParam(":message", $message);
@@ -60,7 +60,8 @@ class DAO {
 	
 	public function saveLesson($name, $Gk5, $G68, $G912, $description, $path){
 		$conn=$this->getConnection();
-		$saveQuery= " INSERT INTO lesson (lessonname,gradek_5, grade6_8, grade9_12, description, lessonFile) VALUES (:name, :gradek_5, :grade6_8, grade9_12 :description, :lessonFile)";
+		$saveQuery=
+			"INSERT INTO lesson (lessonname,gradek_5, grade6_8, grade9_12, description, lessonFile) VALUES (:name, :gradek_5, :grade6_8, grade9_12 :description, :lessonFile)";
 		$q=$conn->prepare($saveQuery);
 		$q->bindParam(":name", $name);
 		$q->bindParam(":description", $description);
