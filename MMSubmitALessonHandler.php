@@ -20,11 +20,8 @@
 	$filePath = '';
 	if (count($_FILES) > 0) {
 		if ($_FILES["file"]["error"] > 0) {
-			echo"here first";
-			exit;
 			throw new Exception("Error: " . $_FILES["file"]["error"]);
 		} else {
-			echo "here";
 			$basePath = "\Users\kayla\cs516";
 			$imagePath = "\tempFiles" . $_FILES["file"]["name"];
 				if (!move_uploaded_file($_FILES["file"]["tmp_name"], $basePath . $imagePath)) {
@@ -53,7 +50,8 @@
 	
 	require_once 'DAO.php';
 	$dao = new DAO();
-	
+	echo "here";
+	/*
 	if(isset('submit'){
 		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description);
 		$_SESSION['message'][]="Thanks for submitting!";
@@ -64,5 +62,6 @@
 		header('Location" MMSubmitALesson.php');
 		exit;
 	}
+	*/
 	
 	exit;
