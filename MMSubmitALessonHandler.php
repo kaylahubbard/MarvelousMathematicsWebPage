@@ -53,6 +53,13 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
-	//$dao -> saveLesson($lesson, $Gk5, $G68, $G912, $description);
-	header('Location: MMAbout.php');
+	if(isset('submit'){
+		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description);
+		$_SESSION['message'][]="Thanks for submitting!";
+		header('Location: MMSubmitALesson.php');
+		exit;
+	}else{
+		$_SESSION['message'][]="Something went wrong";
+	}
+	
 	exit;

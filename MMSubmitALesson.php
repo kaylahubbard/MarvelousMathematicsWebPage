@@ -32,7 +32,7 @@
 				Upload File:
 				<input type="file" name="lessonFile"><br>
 				Submit:
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" name="submit">
 			</form>
 		</div>
 		<?php require_once "MMFooter.php"; ?>
