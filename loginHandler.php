@@ -32,20 +32,16 @@
 
 	if(isset($_POST['createButton'])){
 		
-		$dao->saveLogin($username, $password);
 		$user=$dao->getUsername($username);
-		echo "here";
-		echo $user;
-		/*
-		if(empty($user)){
+		//if the number of rows in my table with that username are zero, then create a row for the username and password.
+		if($user == 0){	
 			echo "here too";
 			$dao->saveLogin($username, $password);
 			header('Location: MMAbout.php');
 			exit;
+		}else{
+			$_SESSION['message'][]= "That username already exists";
 		}
-		$_SESSION['message'][]= "That username already exists";
-		*/
-		
 	}else if (isset($_POST['loginButton'])){
 		/*
 		$login=$dao->getUserPassword($username, $password);

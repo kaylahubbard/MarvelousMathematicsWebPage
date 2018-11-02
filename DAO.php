@@ -40,14 +40,14 @@ class DAO {
 	}
 	
 	//checks username and password
-	public function getUserPassword($username, $password){
+	public function getUserPassword($name, $pass){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("select username from user where username=:username and password = :password");
-		$q->bindParam(":username", $username);
-		$q->bindParam(":password", $password);
+		$q=$conn->prepare("select username from user where username='$name' and password='$pass'");
+		$q->bindParam(":username", $name);
+		$q->bindParam(":password", $pass);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
-		$result->$q->fetchAll();
+		$result=$q->fetchAll();
 		return $result;
 	}
 
