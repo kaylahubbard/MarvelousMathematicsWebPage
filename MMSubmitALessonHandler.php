@@ -16,14 +16,12 @@
 	$_SESSION['presets']['G68'] = $G68;
 	$_SESSION['presets']['G912'] = $G912;
 	
-	
+	/*
 	$filePath = '';
 	if (count($_FILES) > 0) {
 		if ($_FILES["lessonfile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
 		} else {
-			echo "here";
-			exit;
 			$basePath = "\Users\kayla\cs516";
 			$imagePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
 			
@@ -32,6 +30,7 @@
 				}
 		}
 	}
+	*/
 	
 	
 	if(empty($lesson)){
@@ -53,7 +52,6 @@
 	
 	require_once 'DAO.php';
 	$dao = new DAO();
-	/*
 	if(isset('submit'){
 		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description);
 		$_SESSION['message'][]="Thanks for submitting!";
@@ -64,6 +62,6 @@
 		header('Location" MMSubmitALesson.php');
 		exit;
 	}
-	*/
+	
 	
 	exit;
