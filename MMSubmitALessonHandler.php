@@ -16,6 +16,23 @@
 	$_SESSION['presets']['G68'] = $G68;
 	$_SESSION['presets']['G912'] = $G912;
 	
+	
+	$filePath = '';
+	if (count($_FILES) > 0) {
+		if ($_FILES["file"]["error"] > 0) {
+			echo"here first";
+			throw new Exception("Error: " . $_FILES["file"]["error"]);
+		} else {
+			echo "here";
+			$basePath = "\Users\kayla\cs516";
+			$imagePath = "\tempFiles" . $_FILES["file"]["name"];
+				if (!move_uploaded_file($_FILES["file"]["tmp_name"], $basePath . $imagePath)) {
+					throw new Exception("File move failed");
+				}
+		}
+	}
+	
+	
 	if(empty($lesson)){
 		$_SESSION['message'][] = "Lesson name is required";
 		$bad = true;

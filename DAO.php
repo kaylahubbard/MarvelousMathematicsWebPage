@@ -23,11 +23,6 @@ class DAO {
 	
 	}
 	
-	public function getUser(){
-		$conn=$this->getConnection();
-		return $conn->query("SELECT username FROM user", PDO::FETCH_ASSOC);
-	}
-	
 	//Checks the username
 	public function getUsername($name){
 		$conn=$this->getConnection();
@@ -50,12 +45,6 @@ class DAO {
 		$result=$q->fetchAll();
 		return $result;
 	}
-
-	
-	public function getPass(){
-		$conn = $this->getConnection();
-		return $conn->query("select password from user", PDO::FETCH_ASSOC);
-	}
 	
 	public function saveContact($name, $email, $message){
 			$conn = $this->getConnection();
@@ -68,14 +57,18 @@ class DAO {
 			$q->execute();
 	
 	}
-/*
-	public function saveLesson($name, $description){
+	
+	public function saveLesson($name, $Gk5, $G68, $G912, $description, ){
 		$conn=$this->getConnection();
-		$saveQuery= " INSERT INTO lesson (name, description) VALUES (:name, :description)";
+		$saveQuery= " INSERT INTO lesson (lessonname,gradek_5, grade6_8, grade9_12, description) VALUES (:name, :gradek_5, :grade6_8, grade9_12 :description)";
 		$q=$conn->prepare($saveQuery);
 		$q->bindParam(":name", $name);
 		$q->bindParam(":description", $description);
+		$q->bindParam(":gradek_5", $Gk5);
+		$q->bindParam("grade6_8", $G68);
+		$q->bindParam("grade9_12", $G912);
+		$q->execute();
 	}
-*/
+
 	
 }
