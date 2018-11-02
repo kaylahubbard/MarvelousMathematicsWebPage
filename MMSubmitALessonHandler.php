@@ -60,6 +60,8 @@
 		exit;
 	}else{
 		$_SESSION['message'][]="Something went wrong";
+		header('Location" MMSubmitALesson.php');
+		exit;
 	}
 	
 	exit;
