@@ -19,12 +19,14 @@
 	
 	$filePath = '';
 	if (count($_FILES) > 0) {
-		if ($_FILES["file"]["error"] > 0) {
-			throw new Exception("Error: " . $_FILES["file"]["error"]);
+		if ($_FILES["lessonfile"]["error"] > 0) {
+			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
 		} else {
 			$basePath = "\Users\kayla\cs516";
-			$imagePath = "\tempFiles" . $_FILES["file"]["name"];
-				if (!move_uploaded_file($_FILES["file"]["tmp_name"], $basePath . $imagePath)) {
+			$imagePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
+			echo "here";
+			exit;
+				if (!move_uploaded_file($_FILES["lessonfile"]["tmp_name"], $basePath . $imagePath)) {
 					throw new Exception("File move failed");
 				}
 		}
@@ -50,7 +52,6 @@
 	
 	require_once 'DAO.php';
 	$dao = new DAO();
-	echo "here";
 	/*
 	if(isset('submit'){
 		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description);

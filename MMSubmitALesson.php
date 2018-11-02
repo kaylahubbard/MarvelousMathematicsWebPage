@@ -30,7 +30,7 @@
 				Lesson Description:<br>
 				<textarea id="message" name="description"><?php echo isset($_SESSION['presets']['description']) ? $_SESSION['presets']['description'] : ''; ?></textarea><br>
 				Upload File:
-				<input type="file" name="lessonFile"><br>
+				<input type="file" name="lessonFile" accept=".doc, .docx, .pdf"><br>
 				Submit:
 				<input type="submit" value="Submit" name="submit">
 			</form>
