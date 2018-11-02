@@ -31,12 +31,10 @@
 	$dao = new DAO();
 
 	if(isset($_POST['createButton'])){
-		$user=$dao->getUsername($username);
-		print_r($user);
-		
-		/*
+		$user=$dao->getUsername($username);		
+
 		//if the number of rows in my table with that username are zero, then create a row for the username and password.
-		if($user == 0){	
+		if($user){	
 			echo "here too";
 			$dao->saveLogin($username, $password);
 			header('Location: MMAbout.php');
