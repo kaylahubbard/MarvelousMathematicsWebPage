@@ -35,7 +35,6 @@
 
 		//if the number of rows in my table with that username are zero, then create a row for the username and password.
 		if($user){	
-			echo "here too";
 			$dao->saveLogin($username, $password);
 			header('Location: MMAbout.php');
 			exit;
@@ -45,18 +44,15 @@
 			exit;
 		}
 	}else if (isset($_POST['loginButton'])){
-		/*
 		$login=$dao->getUserPassword($username, $password);
-		if(!empty($login)){
+		if($login){
 			header('Location: MMAbout.php');
 			exit;
 		}else{
 			$_SESSION['message'][] = "Username or Password is incorrect.";
-			$bad = true;
-			
+			header('Location: MMLogin.php');
+			exit;
 		}
-		*/
-		
 	}	
 	
 	//header('Location: MMLogin.php');
