@@ -32,7 +32,7 @@
 
 	if(isset($_POST['createButton'])){
 		$user=$dao->getUsername($username);
-		echo($user);
+		print_r($user);
 		
 		/*
 		//if the number of rows in my table with that username are zero, then create a row for the username and password.
