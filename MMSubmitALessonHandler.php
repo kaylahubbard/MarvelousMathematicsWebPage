@@ -16,21 +16,20 @@
 	$_SESSION['presets']['G68'] = $G68;
 	$_SESSION['presets']['G912'] = $G912;
 	
-	/*
+	
 	$filePath = '';
 	if (count($_FILES) > 0) {
 		if ($_FILES["lessonfile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
 		} else {
 			$basePath = "\Users\kayla\cs516";
-			$imagePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
-			
-				if (!move_uploaded_file($_FILES["lessonfile"]["tmp_name"], $basePath . $imagePath)) {
+			$filePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
+				if (!move_uploaded_file($_FILES["lessonfile"]["tmp_name"], $basePath . $filePath)) {
 					throw new Exception("File move failed");
 				}
 		}
 	}
-	*/
+	
 	
 	
 	if(empty($lesson)){
@@ -54,7 +53,7 @@
 	$dao = new DAO();
 	
 	if(isset($_POST['submit'])){
-		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description);
+		$dao->saveLesson($lesson, $Gk5, $G68, $G912, $description, $filePath);
 		$_SESSION['message'][]="Thanks for submitting!";
 		header('Location: MMSubmitALesson.php');
 		exit;
