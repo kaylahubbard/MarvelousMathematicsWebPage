@@ -58,7 +58,7 @@ class DAO {
 	
 	}
 	
-	public function saveLesson($name, $Gk5, $G68, $G912, $description, ){
+	public function saveLesson($name, $Gk5, $G68, $G912, $description){
 		$conn=$this->getConnection();
 		$saveQuery= " INSERT INTO lesson (lessonname,gradek_5, grade6_8, grade9_12, description) VALUES (:name, :gradek_5, :grade6_8, grade9_12 :description)";
 		$q=$conn->prepare($saveQuery);
