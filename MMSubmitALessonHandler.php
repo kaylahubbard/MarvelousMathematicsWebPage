@@ -22,10 +22,11 @@
 		if ($_FILES["lessonfile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
 		} else {
-			$basePath = "\Users\kayla\cs516";
-			$imagePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
 			echo "here";
 			exit;
+			$basePath = "\Users\kayla\cs516";
+			$imagePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
+			
 				if (!move_uploaded_file($_FILES["lessonfile"]["tmp_name"], $basePath . $imagePath)) {
 					throw new Exception("File move failed");
 				}
