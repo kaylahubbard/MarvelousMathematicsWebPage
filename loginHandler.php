@@ -31,8 +31,8 @@
 	$dao = new DAO();
 
 	if(isset($_POST['createButton'])){
-		
 		$user=$dao->getUsername($username);
+		
 		//if the number of rows in my table with that username are zero, then create a row for the username and password.
 		if($user == 0){	
 			echo "here too";
@@ -41,6 +41,8 @@
 			exit;
 		}else{
 			$_SESSION['message'][]= "That username already exists";
+			header('Location: MMLogin.php')
+			exit;
 		}
 	}else if (isset($_POST['loginButton'])){
 		/*
