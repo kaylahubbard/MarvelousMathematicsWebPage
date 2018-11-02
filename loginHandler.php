@@ -41,7 +41,7 @@
 			exit;
 		}else{
 			$_SESSION['message'][]= "That username already exists";
-			header('Location: MMLogin.php')
+			header('Location: MMLogin.php');
 			exit;
 		}
 	}else if (isset($_POST['loginButton'])){
