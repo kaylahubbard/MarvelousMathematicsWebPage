@@ -87,4 +87,5 @@ class DAO {
 		$q->execute();
 		$result=$q->fetchAll();
 		return $result;
+	}
 }
