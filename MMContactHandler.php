@@ -36,8 +36,10 @@
 	
 	require_once 'DAO.php';
 	$dao = new DAO();
+	
 	if(isset($_POST['submit'])){
-		$dao -> saveContact($name, $email, $msg);
+		$dao->saveContact($name, $email, $msg);
 	}
+	
 	header('Location: MMAbout.php');
 	exit;

@@ -25,8 +25,7 @@
 				</div>
 				<?php }
 					unset($_SESSION['message']);
-				?>
-				<?php } ?>	
+				} ?>	
 				<form method=POST action=MMContactHandler.php>
 					Name:
 					<input type="text" name="name" value="<?php echo isset($_SESSION['presets']['name']) ? $_SESSION['presets']['name'] : ''; ?>"><br>
