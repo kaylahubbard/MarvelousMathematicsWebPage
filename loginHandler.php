@@ -23,9 +23,6 @@
 		exit;
 	}
 	
-	//All is good
-	unset($_SESSION['presets']);
-	
 	require_once 'DAO.php';
 	
 	$dao = new DAO();
@@ -54,6 +51,9 @@
 			exit;
 		}
 	}	
+	
+	//All is good
+	unset($_SESSION['presets']);
 	
 	//header('Location: MMLogin.php');
 	exit;

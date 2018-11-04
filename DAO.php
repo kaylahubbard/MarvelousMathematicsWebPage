@@ -13,13 +13,13 @@ class DAO {
 	}
 	
 	public function saveLogin($name, $pass){
-			$conn=$this->getConnection();
-			$saveQuery = 
-				"INSERT INTO user (username, password) VALUES (:username, :password)";
-			$q=$conn->prepare($saveQuery);
-			$q->bindParam(":username", $name);
-			$q->bindParam(":password", $pass);
-			$q->execute();
+		$conn=$this->getConnection();
+		$saveQuery = 
+			"INSERT INTO user (username, password) VALUES (:username, :password)";
+		$q=$conn->prepare($saveQuery);
+		$q->bindParam(":username", $name);
+		$q->bindParam(":password", $pass);
+		$q->execute();
 	
 	}
 	
@@ -47,15 +47,14 @@ class DAO {
 	}
 	
 	public function saveContact($name, $email, $message){
-			$conn=$this->getConnection();
-			$saveQuery= 
-				"INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
-			$q=$conn->prepare($saveQuery);
-			$q->bindParam(":name", $name);
-			$q->bindParam(":email", $email);
-			$q->bindParam(":message", $message);
-			$q->execute();
-	
+		$conn=$this->getConnection();
+		$saveQuery= 
+			"INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
+		$q=$conn->prepare($saveQuery);
+		$q->bindParam(":name", $name);
+		$q->bindParam(":email", $email);
+		$q->bindParam(":message", $message);
+		$q->execute();
 	}
 	
 	public function saveLesson($name, $Gk5, $G68, $G912, $description, $path){
@@ -71,6 +70,21 @@ class DAO {
 		$q->bindParam(":lessonFile", $path);
 		$q->execute();
 	}
-
 	
+	public function getLessonName(){
+		$conn=$this->getConnection();
+		$q=$conn->prepare("select lessonname from lesson order by idlesson");
+		$q->setFetchMode(PDO::FETCH_ASSOC);
+		$q->execute();
+		$result=$q->fetchAll();
+		return $result;
+	}
+	
+	public function getLessonDescription(){
+		$conn=$this->getConnection();
+		$q=$conn->prepare("select description from lesson order by idlesson");
+		$q->setFetchMode(PDO::FETCH_ASSOC);
+		$q->execute();
+		$result=$q->fetchAll();
+		return $result;
 }

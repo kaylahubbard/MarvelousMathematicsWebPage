@@ -22,7 +22,6 @@
 					foreach($_SESSION['message'] as $messages){?>
 				<div class="message">
 					<?php echo $messages; ?>
-					here
 				</div>
 				<?php }
 					unset($_SESSION['message']);
@@ -34,10 +33,8 @@
 					Email:
 					<input type="email" name="email" value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ''; ?>"><br>
 					Message:<br>
-					<textarea id="message" name="message">
-					<?php echo isset($_SESSION['presets']['msg']) ? $_SESSION['presets']['msg'] : ''; ?>
-					</textarea><br>
-					<input type = "submit" value = "Submit">
+					<textarea id="message" name="message"><?php echo isset($_SESSION['presets']['msg']) ? $_SESSION['presets']['msg'] : ''; ?></textarea><br>
+					<input type = "submit" value = "Submit" name="submit">
 			</div></td>
 		</tr>
 		</table>
