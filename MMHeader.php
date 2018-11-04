@@ -11,7 +11,7 @@
 	
 		<h1>
 			<div class = "logo">
-				<a href="MMLogin.php">
+				<a href="logout.php">
 					<img src="logo.jpg">
 				</a><br>
 				Logout
