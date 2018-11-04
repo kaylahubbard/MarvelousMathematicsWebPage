@@ -39,6 +39,7 @@
 	
 	if(isset($_POST['submit'])){
 		$dao->saveContact($name, $email, $msg);
+		$_SESSION['message'][]="Thanks for the email!"
 	}
 	
 	header('Location: MMAbout.php');
