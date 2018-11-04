@@ -1,6 +1,8 @@
 <?php $thisPage="Lessons"; ?>
 <html>
-	<?php require_once "MMHeader.php"; 
+	<?php
+	session_start();
+	require_once "MMHeader.php"; 
 	
 	if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
 		header('Location: MMLogin.php');
