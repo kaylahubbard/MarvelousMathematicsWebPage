@@ -26,7 +26,7 @@ class DAO {
 	//Checks the username
 	public function getUsername($name){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("SELECT count(*) FROM user WHERE username='$name'");
+		$q=$conn->prepare("SELECT username FROM user WHERE username='$name'");
 		$q->bindParam(":username", $name);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
