@@ -19,8 +19,8 @@
 		$bad = true;
 	}
 	
-	if (!preg_match("(?=^.{7,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$",$password)) {
-		$_SESSION['message'][] = "Password must be 7 characters long. Must inlcude at least one uppercase letter, one lowercase letter and one number or special character."; 
+	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
+		$_SESSION['message'][] = "Password must have at least one number and one uppercase letter."; 
 		$bad=true;
 	}
 	
