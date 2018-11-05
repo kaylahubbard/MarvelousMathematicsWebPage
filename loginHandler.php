@@ -21,8 +21,7 @@
 	
 	if (!preg_match("(?=^.{7,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$",$password)) {
 		$_SESSION['message'][] = "Password must be 7 characters long. Must inlcude at least one uppercase letter, one lowercase letter and one number or special character."; 
-		header ('Location: MMLogin.php');
-		exit;
+		$bad=true;
 	}
 	
 	if($bad){
