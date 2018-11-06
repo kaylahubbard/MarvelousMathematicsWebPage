@@ -30,19 +30,19 @@
 		}
 	}
 	
-	if($Gk5 == 'k-5'){
+	if($Gk5 == "k-5"){
 		$Gk5bit = true;
 	}else{
 		$Gk5bit = false;
 	}
 	
-	if($G68 == '6-8'){
+	if($G68 == "6-8"){
 		$G68bit = true;
 	}else{
 		$G68bit = false;
 	}
 	
-	if($G912 == '9-12'){
+	if($G912 == "9-12"){
 		$G912bit = true;
 	}else{
 		$G912bit = false;
@@ -68,6 +68,9 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
+	echo $dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description, $filePath);
+	exit;
+	/*
 	if(isset($_POST['submit'])){
 		$dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description, $filePath);
 		$_SESSION['message'][]="Thanks for submitting!";

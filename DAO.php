@@ -46,6 +46,7 @@ class DAO {
 		return $result;
 	}
 	
+	//Saves the contact form information
 	public function saveContact($name, $email, $message){
 		$conn=$this->getConnection();
 		$saveQuery= 
@@ -57,6 +58,7 @@ class DAO {
 		$q->execute();
 	}
 	
+	//Saves the form data from submitting a lesson
 	public function saveLesson($name, $Gk5, $G68, $G912, $description, $path){
 		$conn=$this->getConnection();
 		$saveQuery=
