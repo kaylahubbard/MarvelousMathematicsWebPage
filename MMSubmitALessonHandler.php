@@ -7,6 +7,10 @@
 	$G912 = $_POST['9-12'];
 	$description = $_POST['description'];
 	
+	echo $Gk5;
+	exit;
+	
+	
 	$message = array();
 	$bad = false;
 	
