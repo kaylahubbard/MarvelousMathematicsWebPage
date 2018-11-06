@@ -16,7 +16,7 @@
 	$_SESSION['presets']['G68'] = $G68;
 	$_SESSION['presets']['G912'] = $G912;
 	
-	
+	/*
 	$filePath = '';
 	if (count($_FILES) > 0) {
 		if ($_FILES["lessonfile"]["error"] > 0) {
@@ -29,6 +29,7 @@
 				}
 		}
 	}
+	*/
 	
 	if($Gk5 == "k-5"){
 		$Gk5bit = true;
@@ -68,7 +69,7 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
-	echo $dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description, $filePath);
+	echo $dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description);
 	exit;
 	/*
 	if(isset($_POST['submit'])){
