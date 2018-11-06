@@ -70,6 +70,7 @@
 	$dao = new DAO();
 	
 	echo $dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description);
+	header('Location" MMSubmitALesson.php');
 	exit;
 	/*
 	if(isset($_POST['submit'])){
