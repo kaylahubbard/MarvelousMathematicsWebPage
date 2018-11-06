@@ -48,6 +48,10 @@
 		$G912bit = 0;
 	}
 	
+	echo $Gk5bit;
+	exit;
+	
+	/*
 	if(empty($lesson)){
 		$_SESSION['message'][] = "Lesson name is required";
 		$bad = true;
