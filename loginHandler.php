@@ -35,8 +35,6 @@
 
 	if(isset($_POST['createButton'])){
 		$user=$dao->getUsername($username);		
-
-		//if the number of rows in my table with that username are zero, then create a row for the username and password.
 		if(empty($user)){			
 			$dao->saveLogin($username, $password);
 			$_SESSION['logged_in']=true;
