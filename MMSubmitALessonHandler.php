@@ -31,27 +31,23 @@
 	}
 	
 	if($Gk5 == "k-5"){
-		$Gk5bit = 1;
+		$Gk5bit = true;
 	}else{
-		$Gk5bit = 0;
+		$Gk5bit = false;
 	}
 	
 	if($G68 == "6-8"){
-		$G68bit = 1;
+		$G68bit = true;
 	}else{
-		$G68bit = 0;
+		$G68bit = false;
 	}
 	
 	if($G912 == "9-12"){
-		$G912bit = 1;
+		$G912bit = true;
 	}else{
-		$G912bit = 0;
+		$G912bit = false;
 	}
 	
-	echo $Gk5bit;
-	exit;
-	
-	/*
 	if(empty($lesson)){
 		$_SESSION['message'][] = "Lesson name is required";
 		$bad = true;
