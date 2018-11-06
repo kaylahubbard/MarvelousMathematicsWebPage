@@ -10,7 +10,7 @@
 	echo $Gk5;
 	exit;
 	
-	
+	/*
 	$message = array();
 	$bad = false;
 	
