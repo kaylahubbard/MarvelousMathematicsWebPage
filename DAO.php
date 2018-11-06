@@ -72,6 +72,7 @@ class DAO {
 		$q->bindParam(":grade9_12", $G912);
 		$q->bindParam(":lessonFile", $path);
 		$q->execute();
+		return "made it through";
 	}
 	
 	public function getLessonName(){
