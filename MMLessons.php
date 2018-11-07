@@ -24,7 +24,7 @@
 							<td>Lesson: " . htmlentities($lesson['lessonname']) . "/></td>
 							<td>Content: " . if($lesson['gradek_5']){ . " K-5 ."}."</td>
 							<td>Description: ". htmlentities($lesson['description'])."</td>
-							<td>Attached File: ".{$lesson['lessonFile']."</td>
+							<td>Attached File: ".{$lesson['lessonFile']}."</td>
 					</tr>";
 			}
 		?>
