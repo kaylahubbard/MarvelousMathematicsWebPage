@@ -17,6 +17,17 @@
 	
 	<body>
 		<table>
+		
+		<?php
+			foreach ($lessons as $lesson) {
+				echo "<tr>
+							<td>Lesson: " . htmlentities($lesson['lessonname']) . "/></td>
+							<td>Content: " . if($lesson['gradek_5']){ . " K-5 ."}."</td>
+							<td>Description: ". htmlentities($lesson['description'])."</td>
+							<td>Attached File: ".{$lesson['lessonFile']."</td>
+					</tr>";
+			}
+		?>
 			<tr>
 				<td>
 				Lesson: will pull the lesson name from a submission.<br>
