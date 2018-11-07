@@ -12,7 +12,7 @@
 	
 	$dao = new DAO();
 	$lessons = $dao->getLessons();
-	echo $lessons;
+	
 	?>
 	
 	<body>
@@ -23,6 +23,7 @@
 				Content Level: will pull the level from a submission.<br>
 				Description: will pull the description from a submission.<br>
 				Attached File: will pull the file from a submission.<br>
+				<?php echo $lessons; ?>
 				</td>
 			</tr>
 		</table>
