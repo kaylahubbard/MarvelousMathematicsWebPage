@@ -65,6 +65,10 @@ class DAO {
 			"INSERT INTO lesson (lessonname, gradek_5, grade6_8, grade9_12, description) 
 				VALUES (:name, :gradek_5, :grade6_8, :grade9_12 :description)";
 		$q=$conn->prepare($saveQuery);
+		echo $q;
+		exit;
+	}
+		/*
 		$q->bindParam(":name", $name);
 		$q->bindParam(":description", $description);
 		$q->bindParam(":gradek_5", $Gk5);
