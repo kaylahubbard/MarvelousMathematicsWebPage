@@ -69,8 +69,8 @@
 	require_once 'DAO.php';
 	$dao = new DAO();
 	
-	$saved=$dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description);
-	echo $saved;
+	$dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description);
+	header ('Location: MMSubmitALesson.php');
 	exit;
 	/*
 	if(isset($_POST['submit'])){

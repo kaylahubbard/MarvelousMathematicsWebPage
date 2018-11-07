@@ -63,7 +63,7 @@ class DAO {
 		$conn=$this->getConnection();
 		$saveQuery=
 			"INSERT INTO lesson (lessonname, gradek_5, grade6_8, grade9_12, description) 
-				VALUES (:name, :gradek_5, :grade6_8, :grade9_12 :description)";
+				VALUES (:name, :gradek_5, :grade6_8, :grade9_12, :description)";
 		$q=$conn->prepare($saveQuery);
 		$q->bindParam(":name", $name);
 		$q->bindParam(":description", $description);
@@ -71,7 +71,6 @@ class DAO {
 		$q->bindParam(":grade6_8", $G68);
 		$q->bindParam(":grade9_12", $G912);
 		$q->execute();
-		return true;
 	}
 	
 	public function getLessons(){
