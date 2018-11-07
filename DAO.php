@@ -73,18 +73,9 @@ class DAO {
 		$q->execute();
 	}
 	
-	public function getLessonName(){
+	public function getLessons(){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("select lessonname from lesson order by idlesson");
-		$q->setFetchMode(PDO::FETCH_ASSOC);
-		$q->execute();
-		$result=$q->fetchAll();
-		return $result;
-	}
-	
-	public function getLessonDescription(){
-		$conn=$this->getConnection();
-		$q=$conn->prepare("select description from lesson order by idlesson");
+		$q=$conn->prepare("select lessonid, lessonname, gradek_5, grade6_8, grade9_12, description from lesson order by date_entered desc");
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result=$q->fetchAll();

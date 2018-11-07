@@ -2,13 +2,17 @@
 <html>
 	<?php
 	session_start();
-	require_once "MMHeader.php"; 
+	require_once "MMHeader.php";
+	require_once "DAO.php";
 	
 	if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
 		header('Location: MMLogin.php');
 		exit;
 	}
 	
+	$dao = new DAO();
+	$lessons = $dao->getLessons();
+	echo $lessons;
 	?>
 	
 	<body>
