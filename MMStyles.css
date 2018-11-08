@@ -121,5 +121,5 @@ input[type="checkbox"]{
 }
 
 hr {
-	border-width: 5px;
+	border-top: 1px solid #8c8b8b;
 }
