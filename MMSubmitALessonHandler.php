@@ -21,6 +21,8 @@
 	if (count($_FILES) > 0) {
 		if ($_FILES["lessonFile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonFile"]["error"]);
+			$_SESSION['message']="Issues uploading your file.";
+
 		} else {
 			$basePath = "C:\Users\kayla\cs516";
 			$filePath = "\tempFile\\" . $_FILES["lessonFile"]["name"];
