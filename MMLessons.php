@@ -22,7 +22,7 @@
 				foreach ($lessons as $lesson) {
 					$grade = "";
 					if($lesson['gradek_5']==1){
-							$grade = "k-5";
+							$grade = "K-5";
 					}
 					if($lesson['grade6_8'] == 1){
 						$grade = $grade." 6-8";
