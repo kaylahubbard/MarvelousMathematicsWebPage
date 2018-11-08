@@ -48,13 +48,14 @@
 		header('Location: MMSubmitALesson.php');
 		exit;
 	}
+	echo "here";
+	exit;
 	
 	unset($_SESSION['presets']);
-	
+	/*
 	require_once 'DAO.php';
 	$dao = new DAO();
-	echo $dao;
-	exit;
+	
 	
 /*
 	if(isset($_POST['submit'])){
