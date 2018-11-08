@@ -20,15 +20,15 @@
 		
 			<?php
 				foreach ($lessons as $lesson) {
-					$grade = "grade";
+					$grade = "";
 					if($lesson['gradek_5']==1){
 							$grade = "k-5";
 					}
 					if($lesson['grade6_8'] == 1){
-						$grade = $grade."6-8";
+						$grade = $grade." 6-8";
 					}
 					if($lesson['grade9_12']){
-						$grade = $grade."9-12";
+						$grade = $grade." 9-12";
 					}
 					
 					echo "<tr>
