@@ -62,7 +62,7 @@
 		exit;
 	}else{
 		$_SESSION['message'][]="Something went wrong";
-		header('Location" MMSubmitALesson.php');
+		header('Location: MMSubmitALesson.php');
 		exit;
 	}
 	
