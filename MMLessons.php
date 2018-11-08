@@ -23,7 +23,7 @@
 					echo "<tr>
 								<td>Lesson: " . htmlentities($lesson['lessonname']) . "/></td>
 								<td>Description: " . htmlentities($lesson['description']) . "</td>
-								<td>Attached File: " . {$lesson['lessonFile']} . "</td>
+								<td>Attached File: " . $lesson['lessonFile'] . "</td>
 						</tr>";
 						
 				}
