@@ -24,7 +24,5 @@ CREATE TABLE IF NOT EXISTS lesson(
 	lessonFile VARCHAR(32)
 );
 
-INSERT INTO lesson (lessonname, gradek_5, grade6_8, grade9_12, description) 
-	VALUES ('Geometry', true, true, false, 'This is a lesson');
 
 
