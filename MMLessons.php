@@ -35,8 +35,7 @@
 							<td>
 								Lesson: " . htmlentities($lesson['lessonname']) . "<br>
 								Content Level: ".$grade.  "<br>
-								Description: " . htmlentities($lesson['description']) . "<br>
-								Attached File: " . $lesson['lessonFile'] . "<br><br>
+								Description: " . htmlentities($lesson['description']) . "<br><br>
 								<hr>
 							</td>							
 						</tr>";

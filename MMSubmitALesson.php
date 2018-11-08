@@ -34,8 +34,6 @@
 				<input type="checkbox" name="9-12" id="9_12" value="9-12"><br>
 				Lesson Description:<br>
 				<textarea id="message" name="description"><?php echo isset($_SESSION['presets']['description']) ? $_SESSION['presets']['description'] : ''; ?></textarea><br>
-				Upload File:
-				<input type="file" name="lessonFile" accept=".doc, .docx, .pdf"><br>
 				Submit:
 				<input type="submit" value="Submit" name="submit">
 			</form>

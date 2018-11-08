@@ -20,8 +20,7 @@ CREATE TABLE IF NOT EXISTS lesson(
 	gradek_5 BOOLEAN,
 	grade6_8 BOOLEAN,
 	grade9_12 BOOLEAN,
-	description VARCHAR(4028) NOT NULL,
-	lessonFile VARCHAR(32)
+	description VARCHAR(4028) NOT NULL
 );
 
 

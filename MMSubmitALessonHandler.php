@@ -16,30 +16,6 @@
 	$_SESSION['presets']['G68'] = $G68;
 	$_SESSION['presets']['G912'] = $G912;
 	
-
-	$filePath = '';
-	if (!empty($_FILES)) {
-		if ($_FILES["lessonFile"]["error"] > 0) {
-			throw new Exception("Error: " . $_FILES["lessonFile"]["error"]);
-			$_SESSION['message']="Issues uploading your file.";
-			header('Location: MMSubmitALesson.php');
-		exit;
-
-		} else {
-			$basePath = "C:\Users\kayla\cs516";
-			$filePath = "\tempFile\\" . $_FILES["lessonFile"]["name"];
-				if (!move_uploaded_file($_FILES["lessonFile"]["tmp_name"], $basePath . $filePath)) {
-					throw new Exception("File move failed");
-					$_SESSION['message']="Issues uploading your file. File may be too large.";
-					header('Location: MMSubmitALesson.php');
-		exit;
-				}
-		}
-	}else{
-		header('Location: MMSubmitALesson.php');
-		exit;
-	}
-	
 	if($Gk5 == "k-5"){
 		$Gk5bit = true;
 	}else{
@@ -80,7 +56,7 @@
 	
 
 	if(isset($_POST['submit'])){
-		$dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description, $filePath);
+		$dao->saveLesson($lesson, $Gk5bit, $G68bit, $G912bit, $description);
 		$_SESSION['message'][]="Thanks for submitting!";
 		header('Location: MMSubmitALesson.php');
 		exit;
