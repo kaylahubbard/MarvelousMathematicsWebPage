@@ -27,7 +27,7 @@ li {
 
 .headers {
 	background-color: #70DBDB;
-	color: white;
+	color: #f6f6f6;
 	text-align: center;
 	font-family: "Courier New", courier, monospace;
 	font-size: 20px;
@@ -41,7 +41,7 @@ li {
 	padding-top: 45px;
 	font-family: "Courier New", courier, monospace;
 	font-size: 25px;
-	color: white;
+	color: #f6f6f6;
 	
 }
 
@@ -55,12 +55,12 @@ li {
 	font-family: "Courier New", courier, monospace;
 	font-size: 40px;
 	height: 80%;
-	color: white;
+	color: #f6f6f6;
 }
 
 .message {
 	background-color: #FF0000;
-	color: white;
+	color: #f6f6f6;
 	font-family: "Courier New", courier, monospace;
 	font-size: 20px;
 }
@@ -76,7 +76,7 @@ table {
 	background-color: #70DBDB;
 	font-family: "Courier New", courier, monospace;
 	font-size: 25px;
-	color: white;
+	color: #f6f6f6;
 }
 
 td {
@@ -102,12 +102,12 @@ a:link, a:visited {
 }
 
 a:hover {
-	color: white;
+	color: #f6f6f6;
 	background-color: #70DBDB;
 }
 
 #currentpage{
-	color: white;
+	color: #f6f6f6;
 	background-color: #70DBDB;
 }
 
