@@ -22,10 +22,11 @@
 		if ($_FILES["lessonfile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
 		} else {
-			$basePath = "\Users\kayla\cs516";
-			$filePath = "\tempFiles" . $_FILES["lessonfile"]["name"];
+			$basePath = "C:\Users\kayla\cs516\\";
+			$filePath = "" . $_FILES["lessonfile"]["name"];
 				if (!move_uploaded_file($_FILES["lessonfile"]["tmp_name"], $basePath . $filePath)) {
 					throw new Exception("File move failed");
+					$_SESSION['message']="Issues uploading your file. File may be too large.";
 				}
 		}
 	}
