@@ -20,7 +20,6 @@
 		
 		<?php
 			foreach ($lessons as $lesson) {
-			echo $lesson['gradek_5'];
 				/*
 				echo "<tr>
 							<td>Lesson: " . htmlentities($lesson['lessonname']) . "/></td>
@@ -28,8 +27,8 @@
 							<td>Description: ". htmlentities($lesson['description'])."</td>
 							<td>Attached File: ".{$lesson['lessonFile']}."</td>
 					</tr>";
-					*/
-			}
+					
+			}*/
 		?>
 			<tr>
 				<td>
@@ -37,6 +36,7 @@
 				Content Level: will pull the level from a submission.<br>
 				Description: will pull the description from a submission.<br>
 				Attached File: will pull the file from a submission.<br>
+				<?php echo $lesson['gradek_5'];}?>
 				</td>
 			</tr>
 		</table>
