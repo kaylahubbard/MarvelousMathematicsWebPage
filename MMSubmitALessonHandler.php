@@ -21,6 +21,7 @@
 	if (count($_FILES) > 0) {
 		if ($_FILES["lessonfile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
+			exit;
 		} else {
 			$basePath = "C:\Users\kayla\cs516";
 			$filePath = "\tempFile\\" . $_FILES["lessonfile"]["name"];
