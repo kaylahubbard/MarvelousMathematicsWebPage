@@ -37,6 +37,7 @@
 								Content Level: ".$grade.  "<br>
 								Description: " . htmlentities($lesson['description']) . "<br>
 								Attached File: " . $lesson['lessonFile'] . "<br><br>
+								<hr>
 							</td>	
 						</tr>";
 				}
