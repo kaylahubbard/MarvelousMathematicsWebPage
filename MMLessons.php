@@ -23,8 +23,9 @@
 					echo "<tr>
 							<td>
 								Lesson: " . htmlentities($lesson['lessonname']) . "<br>
+								Content Level: " . if($lesson['gradek_5'] == 1){ . "K-5" . } . "<br>
 								Description: " . htmlentities($lesson['description']) . "<br>
-								Attached File: " . $lesson['lessonFile'] . "<br>
+								Attached File: " . $lesson['lessonFile'] . "<br><br>
 							</td>	
 						</tr>";
 						
