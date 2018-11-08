@@ -18,7 +18,7 @@
 	
 
 	$filePath = '';
-	if (count($_FILES) > 0) {
+	if (!empty($_FILES)) {
 		if ($_FILES["lessonFile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonFile"]["error"]);
 			$_SESSION['message']="Issues uploading your file.";
