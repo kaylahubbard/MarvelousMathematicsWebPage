@@ -38,7 +38,7 @@
 								Description: " . htmlentities($lesson['description']) . "<br>
 								Attached File: " . $lesson['lessonFile'] . "<br><br>
 								<hr>
-							</td>	
+							</td>							
 						</tr>";
 				}
 			?>
