@@ -59,7 +59,7 @@ class DAO {
 	}
 	
 	//Saves the form data from submitting a lesson
-	public function saveLesson($name, $Gk5, $G68, $G912, $description, $path){
+	public function saveLesson($name, $Gk5, $G68, $G912, $description){
 		$conn=$this->getConnection();
 		$saveQuery=
 			"INSERT INTO lesson (lessonname, gradek_5, grade6_8, grade9_12, description, lessonFile) 
