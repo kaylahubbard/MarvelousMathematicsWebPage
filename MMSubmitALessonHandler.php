@@ -22,7 +22,7 @@
 		if ($_FILES["lessonFile"]["error"] > 0) {
 			throw new Exception("Error: " . $_FILES["lessonFile"]["error"]);
 			$_SESSION['message']="Issues uploading your file.";
-			header('Location" MMSubmitALesson.php');
+			header('Location: MMSubmitALesson.php');
 		exit;
 
 		} else {
@@ -31,12 +31,12 @@
 				if (!move_uploaded_file($_FILES["lessonFile"]["tmp_name"], $basePath . $filePath)) {
 					throw new Exception("File move failed");
 					$_SESSION['message']="Issues uploading your file. File may be too large.";
-					header('Location" MMSubmitALesson.php');
+					header('Location: MMSubmitALesson.php');
 		exit;
 				}
 		}
 	}else{
-		header('Location" MMSubmitALesson.php');
+		header('Location: MMSubmitALesson.php');
 		exit;
 	}
 	
