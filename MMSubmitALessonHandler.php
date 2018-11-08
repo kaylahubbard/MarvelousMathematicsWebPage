@@ -35,6 +35,9 @@
 		exit;
 				}
 		}
+	}else{
+		header('Location" MMSubmitALesson.php');
+		exit;
 	}
 	
 	if($Gk5 == "k-5"){
