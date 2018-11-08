@@ -19,13 +19,12 @@
 
 	$filePath = '';
 	if (count($_FILES) > 0) {
-		if ($_FILES["lessonfile"]["error"] > 0) {
-			throw new Exception("Error: " . $_FILES["lessonfile"]["error"]);
-			exit;
+		if ($_FILES["lessonFile"]["error"] > 0) {
+			throw new Exception("Error: " . $_FILES["lessonFile"]["error"]);
 		} else {
 			$basePath = "C:\Users\kayla\cs516";
-			$filePath = "\tempFile\\" . $_FILES["lessonfile"]["name"];
-				if (!move_uploaded_file($_FILES["lessonfile"]["tmp_name"], $basePath . $filePath)) {
+			$filePath = "\tempFile\\" . $_FILES["lessonFile"]["name"];
+				if (!move_uploaded_file($_FILES["lessonFile"]["tmp_name"], $basePath . $filePath)) {
 					throw new Exception("File move failed");
 					$_SESSION['message']="Issues uploading your file. File may be too large.";
 				}
