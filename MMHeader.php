@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="MMStyles.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<link rel="icon" type="image/jpg" href="favicon.jpg">
 		<title>
 			Marvelous Mathematics
