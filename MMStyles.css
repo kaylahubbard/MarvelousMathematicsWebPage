@@ -58,6 +58,12 @@ li {
 	color: #f6f6f6;
 }
 
+.lesson{
+	clear:left;
+	background-color: #FF0000;
+	color: #f6f6f6;
+}
+
 .message {
 	background-color: #FF0000;
 	color: #f6f6f6;

@@ -16,38 +16,38 @@
 	?>
 	
 	<body>
-	<div class="lesson">
-		<?php
-			foreach ($lessons as $lesson) {
-				$grade = "";
-				if($lesson['gradek_5']==1){
-						$grade = "K-5";
-				}
-				if($lesson['grade6_8'] == 1){
-					$grade = $grade." 6-8";
-				}
-				if($lesson['grade9_12']){
-					$grade = $grade." 9-12";
-				}
-				
-				echo "<div>
-						Lesson: " . htmlentities($lesson['lessonname']) . "<br>
-						Content Level: ".$grade.  "<br>
-						Description: " . htmlentities($lesson['description']) . "<br><br>
-						<hr>
-					</div>";
-			}?>
-			</div>
+		<div class="lesson">
+			<?php
+				foreach ($lessons as $lesson) {
+					$grade = "";
+					if($lesson['gradek_5']==1){
+							$grade = "K-5";
+					}
+					if($lesson['grade6_8'] == 1){
+						$grade = $grade." 6-8";
+					}
+					if($lesson['grade9_12']){
+						$grade = $grade." 9-12";
+					}
+					
+					echo "<div>
+							Lesson: " . htmlentities($lesson['lessonname']) . "<br>
+							Content Level: ".$grade.  "<br>
+							Description: " . htmlentities($lesson['description']) . "<br><br>
+							<hr>
+						</div>";
+				}?>
+		</div>
 			
-			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 
-			<script type="text/javascript">
-				$(document).ready(function(){
-					$('.lesson').slick();
-				});
-			</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.lesson').slick();
+			});
+		</script>
 		
 		<?php require_once "MMFooter.php"; ?>
 	</body>
