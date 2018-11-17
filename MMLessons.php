@@ -16,6 +16,7 @@
 	?>
 	
 	<body>
+	<div class="lesson">
 		<?php
 			foreach ($lessons as $lesson) {
 				$grade = "";
@@ -29,13 +30,14 @@
 					$grade = $grade." 9-12";
 				}
 				
-				echo "<div class=\"lesson\">
+				echo "<div>
 						Lesson: " . htmlentities($lesson['lessonname']) . "<br>
 						Content Level: ".$grade.  "<br>
 						Description: " . htmlentities($lesson['description']) . "<br><br>
 						<hr>
 					</div>";
 			}?>
+			</div>
 			
 			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
