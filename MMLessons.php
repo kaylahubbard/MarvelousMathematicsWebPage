@@ -34,7 +34,6 @@
 							Lesson: " . htmlentities($lesson['lessonname']) . "<br>
 							Content Level: ".$grade.  "<br>
 							Description: " . htmlentities($lesson['description']) . "<br><br>
-							<hr>
 						</div>";
 				}?>
 		</div>
