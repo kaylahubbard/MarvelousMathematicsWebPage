@@ -4,6 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 		<link rel="icon" type="image/jpg" href="favicon.jpg">
+		<link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
 		<title>
 			Marvelous Mathematics
 		</title>
