@@ -60,13 +60,15 @@ li {
 
 .lesson{
 	clear:left;
-	background-color: #FF0000;
+	background-color: #70DBDB;
 	color: #f6f6f6;
 	font-family: "Courier New", courier, monospace;
 	font-size: 40px;
 	height: 80%;
 	width: 50%;
 	margin: 0 auto;
+	text-align: center;
+	
 }
 
 .message {
