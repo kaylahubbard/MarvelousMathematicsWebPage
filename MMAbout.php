@@ -32,11 +32,11 @@
 					unset($_SESSION['message']);
 				} ?>	
 				<form method=POST action=MMContactHandler.php>
-					Name:
-					<input type="text" name="name" value="<?php echo isset($_SESSION['presets']['name']) ? $_SESSION['presets']['name'] : ''; ?>"><br>
-					Email:
-					<input type="email" name="email" value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ''; ?>"><br>
-					Message:<br>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" value="<?php echo isset($_SESSION['presets']['name']) ? $_SESSION['presets']['name'] : ''; ?>"><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" value="<?php echo isset($_SESSION['presets']['email']) ? $_SESSION['presets']['email'] : ''; ?>"><br>
+					<label for="message">Message:</label><br>
 					<textarea id="message" name="message"><?php echo isset($_SESSION['presets']['msg']) ? $_SESSION['presets']['msg'] : ''; ?></textarea><br>
 					<input type = "submit" value = "Submit" name="submit">
 			</div></td>

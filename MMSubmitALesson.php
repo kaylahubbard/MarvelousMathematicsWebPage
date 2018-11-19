@@ -23,7 +23,7 @@
 			?>
 			<?php } ?>
 			<form method=post action=MMSubmitALessonHandler.php>
-				<label for="lessonName">Lesson Name:</label>
+				<label for="lessonName">Lesson Name/Activity:</label>
 				<input type="text" id="lessonName" name="lesson" value="<?php echo isset($_SESSION['presets']['lesson']) ? $_SESSION['presets']['lesson'] : ''; ?>"><br>
 				Good For Levels:
 				<label for="k5">K-5</label>
