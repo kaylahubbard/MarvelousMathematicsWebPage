@@ -129,6 +129,11 @@ a:hover {
 	background-color: #70DBDB;
 }
 
+#current{
+	color: #70DBDB;
+	background-color: #f6f6f6;
+}
+
 body {
 	background-color: #f6f6f6;
 }
