@@ -31,8 +31,8 @@
 					}
 					
 					echo "<div>
-							Lesson: " . htmlentities($lesson['lessonname']) . "<br>
-							Content Level: ".$grade.  "<br>
+							Lesson: " . htmlentities($lesson['lessonname']) . "<br><br>
+							Content Level: ".$grade.  "<br><br>
 							Description: " . htmlentities($lesson['description']) . "<br><br>
 						</div>";
 				}?>
