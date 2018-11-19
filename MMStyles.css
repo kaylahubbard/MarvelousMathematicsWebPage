@@ -58,6 +58,10 @@ li {
 	color: #f6f6f6;
 }
 
+.lesson, label{
+	color:#ff0000;
+}
+
 .lesson{
 	clear:left;
 	background-color: #f6f6f6;
