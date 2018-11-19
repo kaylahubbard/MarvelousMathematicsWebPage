@@ -15,7 +15,7 @@
 	
 	?>
 	
-	<body>
+	<body class="lessons">
 		<div class="lesson">
 			<?php
 				foreach ($lessons as $lesson) {
