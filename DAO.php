@@ -52,12 +52,14 @@ class DAO {
 	
 	//Saves the contact form information
 	public function saveContact($name, $email, $message){
+		$salt=$email . $name;
+		$hashEmail=hash('sha256', $salt);
 		$conn=$this->getConnection();
 		$saveQuery= 
 			"INSERT INTO contact (name, email, message) VALUES (:name, :email, :message)";
 		$q=$conn->prepare($saveQuery);
 		$q->bindParam(":name", $name);
-		$q->bindParam(":email", $email);
+		$q->bindParam(":email", $hashEmail);
 		$q->bindParam(":message", $message);
 		$q->execute();
 	}
